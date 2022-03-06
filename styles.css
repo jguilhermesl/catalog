@@ -12,8 +12,15 @@
     --font-action: "Mulish", serif;
     --font-terciary: 'Montserrat', sans-serif;
 }
+
+.text-fixed{
+    position: fixed;
+    z-index: 100;
+}
+
 .top-message {
     position: relative;
+    width: 100vw;
     height: 50px;
     background-color: #181818;
     color: white;
@@ -42,17 +49,149 @@
 
 .menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: #F9F9F9;
     height: 50px;
+    padding: 0 2rem;
 }
+
+.icon-cart-shopping {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.fas:hover {
+    color: #22943a;
+}
+
+.sidebar {
+    position: fixed;
+    z-index: 101;
+    right: -20rem;
+    width: 20rem;
+    top: 0rem;
+    background-color: #F9F9F9;
+    height: 180vh;
+    transition: all 1s;
+}
+
+.sidebar.show-menu {
+    right: 0rem;
+}
+
+.icon {
+    padding-top: 10px;
+    background: #000;
+    height: 50px;
+    color: #fff;
+    font-family: var(--font-terciary);
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.x {
+    width: 1.5rem;
+    height: 1.5rem;
+    z-index: 100;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    transition: all 1.2s;
+    margin-right: 280px;
+}
+
+.line {
+    width: 100%;
+    background-color: white;
+    height: .15rem;
+}
+
+#line1 {
+    transform: rotate(45deg) translate(0rem, .4rem);
+
+}
+
+#line2 {
+    transform: rotate(-45deg) translate(0rem, -.4rem);
+
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.text-cart {
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: fixed;
+}
+
+.item-cart {
+    box-shadow: 1px 1px 1px rgba(23, 23, 23, 0.2);
+    display: flex;
+    padding: 10px 10px;
+}
+
+.item-cart img {
+    height: 100px;
+}
+
+
+.total-price {
+    height: 60px;
+    box-shadow: 1px 1px 1px rgba(23, 23, 23, 0.2);
+    text-align: center;
+}
+.total-price-text {
+    margin: 0 auto;
+    font-family: Montserrat;
+    width: 240px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.32rem;
+    text-align: center;
+}
+
+.total-price-text span {
+    font-weight: 800;
+}
+
+.btn-cart {
+    font-family: Montserrat;
+    color: #fff;
+    font-weight: 500;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    border: none!important;
+    box-shadow: 1px 1px 1px rgba(23, 23, 23, 0.2);
+    border-radius: 100px;
+    background: #22943a;
+    cursor: pointer;
+    outline: none!important;
+    margin-top: 2rem;
+}
+
+.btn-cart:hover {
+    opacity: 0.8
+}
+
+.btn-cart:active {
+    opacity: 0.8
+}
+
 
 #img-shoe {
     background-image: url(./imagens/barça.jfif);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 378px;
+    height: 400px;
     width: 100%;
 }
 
@@ -149,11 +288,15 @@
 }
 
 .box-product {
+    display: flex;
+    flex-direction: column;
     margin: 1rem auto;
     box-shadow: 1px 1px 1px rgba(23, 23, 23, 0.2);
     border-radius: 10px;
     background-color: #f9f9f9;
     height: 400px;
+    justify-content: center;
+    text-align: center;
 }
 
 .box-product img {
@@ -190,19 +333,27 @@
 
 }
 
-.amount {
-    display: flex;
-    justify-content: space-evenly;
+.btn-add-cart {
+    font-family: Montserrat;
+    color: #fff;
+    font-weight: 500;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    border: none!important;
+    box-shadow: 1px 1px 1px rgba(23, 23, 23, 0.2);
+    border-radius: 100px;
+    background: #22943a;
+    cursor: pointer;
+    outline: none!important;
+    margin-top: 1rem;
 }
 
-.amount i {
-    color: #22943a;
-    cursor: pointer;
-}
-.amount i:hover {
+.btn-add-cart:hover {
     opacity: 0.8;
 }
-.amount i:active {
+
+.btn-add-cart:active {
     opacity: 0.6;
 }
 
