@@ -2,9 +2,8 @@
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
-<img src="./imagens/header-catalog.png" alt="Header of Catalog">
-<img src="./imagens/products-catalog.png" alt="Products in section Spain">
-<img src="./imagens/franca-catalog.png" alt="Products in section France">
+<img src="./imagens/catalog-with-cart-shopping.png" alt="Header of Catalog">
+
 
 >  Catalog for online shirt store.
 ### Adjustments and improvements
