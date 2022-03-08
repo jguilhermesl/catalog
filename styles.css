@@ -66,14 +66,17 @@
 }
 
 .sidebar {
-    position: fixed;
+    position: absolute;
     z-index: 101;
     right: -20rem;
     width: 20rem;
+    height: 100%;
     top: 0rem;
     background-color: #F9F9F9;
     height: 180vh;
     transition: all 1s;
+    overflow-y: scroll;
+    
 }
 
 .sidebar.show-menu {
@@ -102,7 +105,7 @@
     justify-content: space-evenly;
     cursor: pointer;
     transition: all 1.2s;
-    margin-right: 280px;
+    margin-right: 250px;
 }
 
 .line {
@@ -123,9 +126,11 @@
 
 .items {
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
     text-align: center;
 }
+
 .text-cart {
     font-size: 1.2rem;
     font-weight: 700;
@@ -135,18 +140,25 @@
 .item-cart {
     box-shadow: 1px 1px 1px rgba(23, 23, 23, 0.2);
     display: flex;
-    padding: 10px 10px;
+    padding: 10px 0;
 }
 
 .item-cart img {
     height: 100px;
+    padding-left: 10px;
 }
 
 
 .total-price {
-    height: 60px;
-    box-shadow: 1px 1px 1px rgba(23, 23, 23, 0.2);
+    height: 100px;
+    border-top: 1px solid rgba(23, 23, 23, 0.2);
     text-align: center;
+    position: fixed;
+    bottom: 0rem;
+    margin: 0 auto;
+    width: 20rem;
+    z-index: 1000;
+    background: #fff;
 }
 .total-price-text {
     margin: 0 auto;
@@ -154,7 +166,7 @@
     width: 240px;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.32rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -175,17 +187,59 @@
     background: #22943a;
     cursor: pointer;
     outline: none!important;
-    margin-top: 2rem;
+    margin-top: 0.4rem;
 }
 
 .btn-cart:hover {
-    opacity: 0.8
+    opacity: 0.8;
 }
 
 .btn-cart:active {
-    opacity: 0.8
+    opacity: 0.8;
 }
 
+.counter {
+    display: flex;  
+    margin: 0 auto;
+    height: 150px;
+    padding: 0;
+    margin-top: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.counter input {
+    font-size: 0.9rem;
+    width: 70px;
+    height: 20px;
+    padding: 10px 0 10px 10px;
+    margin: 0;
+    margin-left: 20px;
+    border: 2px solid rgba(23, 23, 23, 0.2);
+    border-radius: 10px;
+}
+
+.btn-counter {
+    font-size: 1rem;
+    width: 20px;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 100px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.btn-counter:hover {
+    opacity: 0.8;
+}
+
+.btn-counter:active {
+    opacity: 0.5;
+}
+
+.text-counter {
+    margin: 0px 10px 0 10px;
+}
 
 #img-shoe {
     background-image: url(./imagens/barça.jfif);
@@ -306,7 +360,6 @@
 
 .text-box {
     font-family: Montserrat;
-    width: 240px;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -314,9 +367,50 @@
     margin-bottom: 3px;
 }
 
+.cart-text-box {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+.price-cart {
+    text-align: left;
+    margin-left: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.quantity-and-price button {
+    font-family: Montserrat;
+    text-align: center;
+    margin-top: 0.5rem;
+    width: 80px;
+    height: 25px;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    background: rgb(223, 28, 28);
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.quantity-and-price button:hover {
+    opacity: 0.8;
+}
+
+.quantity-and-price button:active {
+    opacity: 0.5;
+}
+
 .price {
     font-family: Montserrat;
-    width: 240px;
     font-style: normal;
     font-weight: 800;
     font-size: 15px;

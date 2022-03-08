@@ -1,22 +1,36 @@
 const productsEspanha = [
-    {
-        Nome: 'Camisa Barcelona 2020/2021',
-        Imagem: './imagens/barcelona.jfif',
-        Preço: 'R$ 199,90'
+    {   
+        Id: 0,
+        Nome: 'Camisa Barcelona',
+        Ano: '2020/2021',
+        Imagem: './imagens/barcelona.jpg',
+        Preço: 129.9,
+        Quantidade: 0
     },
     {
-        Nome: 'Camisa Celta de Vigo 2020/2021',
+        Id: 1,
+        Nome: 'Camisa Celta de Vigo',
+        Ano: '2020/2021',
         Imagem: './imagens/celtadevigo.jpg',
-        Preço: 'R$ 129,99'
+        Preço: 129.9,
+        Quantidade: 0
     },
-    {
-        Nome: 'Camisa Real Madrid 2020/2021',
+    {   
+        Id: 2,
+        Nome: 'Camisa Real Madrid',
+        Ano: '2020/2021',
         Imagem: './imagens/realmadrid.jpg',
-        Preço: 'R$ 199,90'
+        Preço: 149.9,
+        Quantidade: 0
     },
-    {
-        Nome: 'Camisa Atlético de Madrid 2020/2021',
-        Imagem: './imagens/atlmadrid.jfif',
-        Preço: 'R$ 299,90'
+    {   
+        Id: 3,
+        Nome: 'Camisa Atlético de Madrid',
+        Ano: '2020/2021',
+        Imagem: './imagens/atlmadrid.jpg',
+        Preço: 229.9,
+        Quantidade: 0
     }
 ]
+
+module.exports = productsEspanha

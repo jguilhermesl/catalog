@@ -1,11 +1,13 @@
-export const itemsBrazil =   [{   
+const productsBrazil =   [
+    {   
     Id: 8,
     Nome: 'Camisa Vasco White 2020/2021',
     Imagem: './imagens/basco-white.jfif',
     Preço: 'R$ 109,90',
     Quantidade: 0,
     Categoria: 'Brasil'
-},]
+},
+]
 
 /* 
 <div class="box-product">

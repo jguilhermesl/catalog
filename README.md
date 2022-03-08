@@ -6,15 +6,22 @@
 
 
 >  Catalog for online shirt store.
+
+### Link:
+https://shirtscatalog.netlify.app/
+
+
 ### Adjustments and improvements
 
 
-The project has been finished.
+The project is under development. Missing steps:
 
-- [x] Body with HTML.
-- [x] Stylization with CSS.
-- [x] JavaScript
+- [x] Body with HTML;
+- [x] Stylization with CSS;
+- [x] JavaScript;
 - [ ] Responsiveness
+- [ ] Payment methods
+- [ ] Array organization
 
 ## 🤝 Collaborator
 
