@@ -4,7 +4,7 @@ const productsEspanha = [
         Nome: 'Camisa Barcelona',
         Ano: '2020/2021',
         Imagem: './imagens/barcelona.jpg',
-        Preço: 20.9,
+        Preço: 0.9,
         Quantidade: 0
     },
     {
@@ -12,7 +12,7 @@ const productsEspanha = [
         Nome: 'Camisa Celta de Vigo',
         Ano: '2020/2021',
         Imagem: './imagens/celtadevigo.jpg',
-        Preço: 10.2,
+        Preço: 1.2,
         Quantidade: 0
     },
     {   
@@ -28,7 +28,7 @@ const productsEspanha = [
         Nome: 'Camisa Atlético de Madrid',
         Ano: '2020/2021',
         Imagem: './imagens/atlmadrid.jpg',
-        Preço: 229.9,
+        Preço: 21.9,
         Quantidade: 0
     }
 ]
@@ -248,7 +248,7 @@ const productsFrance =   [
     Nome: 'Camisa Lyon',
     Ano: '2020/2021',
     Imagem: './imagens/lyon.jpg',
-    Preço: 109.90,
+    Preço: 2.90,
     Quantidade: 0
 },
 {   
@@ -256,7 +256,7 @@ const productsFrance =   [
     Nome: 'Camisa Ollympique Marseille',
     Ano: '2020/2021',
     Imagem: './imagens/oll.jpg',
-    Preço: 129.9,
+    Preço: 3.9,
     Quantidade: 0
 },
 {   
@@ -264,7 +264,7 @@ const productsFrance =   [
     Nome: 'Camisa PSG Black',
     Ano: '2020/2021',
     Imagem: './imagens/psg-black.jpg',
-    Preço: 199.90,
+    Preço: 11.90,
     Quantidade: 0
 },
 {   
@@ -272,7 +272,7 @@ const productsFrance =   [
     Nome: 'Camisa PSG White',
     Ano: '2020/2021',
     Imagem: './imagens/psg-first.jpg',
-    Preço: 299.90,
+    Preço: 2.90,
     Quantidade: 0
 }
 ]
